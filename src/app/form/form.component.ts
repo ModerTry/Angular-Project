@@ -1,6 +1,5 @@
 import { User } from './../user';
 import { Component, OnInit } from '@angular/core';
-import { EnrollmentService} from '../enrollment.service';
 
 @Component({
   selector: 'app-form',
@@ -13,7 +12,7 @@ export class FormComponent implements OnInit {
 
    userModel=new User('Rob', 'rob@test.com', 8827669073,'default','morning',true );
 
-  constructor(private _enrollmentService: EnrollmentService){}
+  constructor(){}
 
    validateTopic(value:any){
      if (value === 'default'){
@@ -24,11 +23,8 @@ export class FormComponent implements OnInit {
      }
    }
 onSubmit(){
-  this._enrollmentService.enroll(this.userModel)
-  .subscribe(
-    data=> console.log('Success', data),
-    error => console.error('Error', error)
-  )
+
+
 }
 
 
