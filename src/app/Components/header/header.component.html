@@ -6,91 +6,19 @@
   </label>
   <label class="logo">Rida Store</label>
   <ul>
-    <li><a class="ative" href="#">Rida</a></li>
-    <li><a class="ative" href="#">Pannel</a></li>
-    <li><a class="ative" href="">Lace</a></li>
-    <li><a class="ative" href="#">About Us</a></li>
-    <li><a class="ative" href="#">Contact Us</a></li>
+    <li><a routerLink="/rida" routerLinkActive="active">Rida</a></li>
+    <li><a routerLink="/pannel" routerLinkActive="active">Pannel</a></li>
+    <li><a routerLink="/lace" routerLinkActive="active">Lace</a></li>
+    <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+    <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
   </ul>
 </nav>
 <!--Nav Bar End-->
-<!--Slider Start
+<!--Slider Start-->
 
 
-  <owl-carousel-o [options]="customOptions" class="overlay">
-    <ng-template carouselSlide >
-      <img src="../../assets/Images/Slider1.jpg">
-    </ng-template>    
-    <ng-template carouselSlide>
-      <img src="../../assets/Images/Slider3.jpg">
-    </ng-template>  
-    <ng-template carouselSlide>
-      <img src="../../assets/Images/Slider4.jpg">
-    </ng-template>  
-  </owl-carousel-o>-->
+ 
 
-<!--Slider End-->
-
-
-<!--<div class=slideshow middle>
-  <div class="slides">
-    <input type="radio" name="r" id="r1" checked>
-    <input type="radio" name="r" id="r2" checked>
-    <input type="radio" name="r" id="r3" checked>
-    <input type="radio" name="r" id="r4" checked>
-    <input type="radio" name="r" id="r5" checked>
-    <div class="slide" s1>
-      <img src="../../assets/Images/Slider1.jpg">
-    </div>
-    <div class="slide" s2>
-      <img src="../../assets/Images/Slider3.jpg">
-    </div>
-    <div class="slide" s2>
-      <img src="../../assets/Images/Slider4.jpg">
-    </div>
-    <div class="slide"s1>
-      <img src="../../assets/Images/Slider1.jpg">
-    </div>
-    </div>
-
-    <div class="navigation">
-      <label for="r1" class="bar"></label>
-      <label for="r2" class="bar"></label>
-      <label for="r3" class="bar"></label>
-      <label for="r4" class="bar"></label>
-      <label for="r5" class="bar"></label>
-    </div>
-  </div>-->
-
-  <!--<div class="container">
-    <input type="radio" name="images" id="i1" checked>
-    <input type="radio" name="images" id="i2">
-    <input type="radio" name="images" id="i3">
-    <div class="slide_img" id="One">
-      <img src="../../assets/Images/Slider1.jpg">
-      <label for="i3" class="pre"></label>
-      <label for="i2" class="nxt"></label> 
-    </div>
-    <div class="slide_img" id="Two">
-      <img src="../../assets/Images/Slider3.jpg">
-      <label for="i1" class="pre"></label>
-      <label for="i3" class="nxt"></label> 
-    </div>
-    <div class="slide_img" id="Three">
-      <img src="../../assets/Images/Slider4.jpg">
-      <label for="i2" class="pre"></label>
-      <label for="i1" class="nxt"></label> 
-    </div>
-    <div class="slide_img" id="One">
-      <img src="../../assets/Images/Slider1.jpg">
-      <label for="i3" class="pre"></label>
-      <label for="i2" class="nxt"></label> 
-    </div>
-    <div class="nav">
-      <label class="dots" id="dot1" for="i1"></label>
-      <label class="dots" id="dot2" for="i2"></label>
-      <label class="dots" id="dot3" for="i3"></label>
-    </div>-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -147,6 +75,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!--Slider End-->
+    <router-outlet></router-outlet>
 
   
 

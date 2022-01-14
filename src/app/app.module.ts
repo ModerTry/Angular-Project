@@ -4,7 +4,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 import { FormsModule }   from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
@@ -30,7 +30,7 @@ import { LaceComponent } from './lace/lace.component';
     RidaComponent,
     PannelComponent,
     LaceComponent,
-   
+    routingComponents
    
   ],
   imports: [
