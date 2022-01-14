@@ -15,6 +15,9 @@ import { ContactUsComponent } from './Components/contact-us/contact-us.component
 import { RidaComponent } from './rida/rida.component';
 import { PannelComponent } from './pannel/pannel.component';
 import { LaceComponent } from './lace/lace.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -30,7 +33,10 @@ import { LaceComponent } from './lace/lace.component';
     RidaComponent,
     PannelComponent,
     LaceComponent,
-    routingComponents
+    routingComponents,
+    PageNotFoundComponent,
+    HomeComponent,
+    SliderComponent
    
   ],
   imports: [
