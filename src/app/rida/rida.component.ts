@@ -9,7 +9,11 @@ export class RidaComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  url:string ="../../assets/Images/Floral_Lehenga.jpg";
+  changeImage(event:any){
+    this.url = event.target.src;
+    
   }
 
 }
