@@ -1,0 +1,5 @@
+ .container-fluid{
+ 
+    padding-left: var(--bs-gutter-x,none);
+  padding-right: var(--bs-gutter-x,none);
+}

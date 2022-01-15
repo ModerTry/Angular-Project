@@ -31,6 +31,7 @@ label.logo{
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+    top: 2px;
 }
 nav ul{
     float: right;
@@ -78,6 +79,12 @@ a.active, a:hover{
     display:none;
 }
 @media (max-width:952px){
+    nav{
+        background-color:#fff;
+        height: 80px;
+    }
+
+
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -118,6 +125,11 @@ a.active, a:hover{
         left: 0;
 
     }  
+    section{
+        background: url() no-repeat;
+        background-size: cover;
+        height: calc(100vh -80px);
+    }
 }
 
 

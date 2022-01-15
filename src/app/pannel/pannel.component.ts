@@ -9,7 +9,11 @@ export class PannelComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  url:string ="../../assets/Images/Product_3.jpg";
+  changeImage(event:any){
+    this.url = event.target.src;
+    
   }
 
 }

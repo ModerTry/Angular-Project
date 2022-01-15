@@ -6,6 +6,11 @@
     list-style:none;
     box-sizing: border-box;
 }
+.row>* {
+   padding-right: none!important; 
+   padding-left: none!important; 
+  margin-top: none!important; 
+}
 .carousel-item{
     height: 100vh;
     min-height: 115px;
@@ -81,4 +86,4 @@
       box-shadow: 0 0 0 0.2rem #ccc;
   }
 
-
+ 

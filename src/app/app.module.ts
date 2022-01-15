@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { OwlModule } from 'ngx-owl-carousel';
 import { FormsModule }   from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -41,6 +42,7 @@ import { SliderComponent } from './slider/slider.component';
   ],
   imports: [
     BrowserModule,
+    NgxPaginationModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
