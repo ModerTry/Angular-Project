@@ -1,0 +1,29 @@
+{
+    "status":"success",
+    "ridaCollection":[
+        { 
+            "imgUrl":"../../assets/Images/Floral_Lehenga.jpg",
+            "ridaName":"Abcd",
+            "ridaPrice":590,
+            "isFavourite":false
+        },
+        { 
+            "imgUrl":"../../assets/Images/Floral_Lehenga.jpg",
+            "ridaName":"Abcd",
+            "ridaPrice":590,
+            "isFavourite":false
+        },
+        { 
+            "imgUrl":"../../assets/Images/Floral_Lehenga.jpg",
+            "ridaName":"Abcd",
+            "ridaPrice":590,
+            "isFavourite":false
+        },
+        { 
+            "imgUrl":"../../assets/Images/Floral_Lehenga.jpg",
+            "ridaName":"Abcd",
+            "ridaPrice":590,
+            "isFavourite":false
+        }
+    ]
+}

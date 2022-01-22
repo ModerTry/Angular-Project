@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rida.component.css']
 })
 export class RidaComponent implements OnInit {
+ 
 
   constructor() { }
 
@@ -15,5 +17,8 @@ export class RidaComponent implements OnInit {
     this.url = event.target.src;
     
   }
+  
 
-}
+  }
+
+

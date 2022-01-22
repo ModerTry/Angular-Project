@@ -24,6 +24,8 @@ import { SliderComponent } from './slider/slider.component';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,8 +39,8 @@ import { SliderComponent } from './slider/slider.component';
     routingComponents,
     PageNotFoundComponent,
     HomeComponent,
-    SliderComponent
-   
+    SliderComponent,
+ 
   ],
   imports: [
     BrowserModule,

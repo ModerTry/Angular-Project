@@ -1,0 +1,45 @@
+<!--------------------------------------Product Cart --------------------------------------------->
+<section class="bg-color">
+    <div class="containers">
+        <div class="title">
+            <p>The Best Seller Of Rida's</p>
+            <h1><span>Best</span> Seller</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3" *ngFor="let item from ridaCollection">
+                <div class="card" >
+                    <div class="cart-main">
+                        <div class="discount"><i class="fa fa-tag" aria-hidden="true"></i> Save INR {{item.ridaPrice}}</div>
+                      
+                        <div class="product-container">
+                            <div class="p" (mouseover)="changeImage($event)"><img src="../../assets/Images/Floral_Lehenga.jpg" alt="Product"></div>
+                            <div class="p"(mouseover)="changeImage($event)"><img src="../../assets/Images/Net_Lehenga.jpg" alt="Product"></div>
+                            <div class="p"(mouseover)="changeImage($event)"><img src="../../assets/Images/Orange_Lehenga.jpg" alt="Product"></div>
+                        </div>
+                        <div class="image">
+                            <img src="{{item.ImageUrl}}" alt="Product">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">{{item.ridaName}}</a>
+                       
+                        <p><span class="money">INR 2100.00</span> <span class="old-price">INR 4000.00</span></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+          
+    </div>
+
+</section>
+<!----------------------------------------Product Cart End--------------------------------------->
+
+
