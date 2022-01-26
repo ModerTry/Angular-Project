@@ -1,4 +1,5 @@
 import { Component, OnInit,Input, Output } from '@angular/core';
+import { CartService } from './../../service/cart.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -8,12 +9,17 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HeaderComponent implements OnInit {
 
-
+  public totalItem: number=0;
 
  
-  constructor() { }
+  constructor(private CartService:CartService) { }
 
   ngOnInit(): void {
+    this.CartService.getProducts()
+    .subscribe(res=>{
+      this.totalItem = res.length;
+
+    })
   }
   
 }

@@ -1,0 +1,175 @@
+/*-----------------------------Product Detail Start---------------------------------------*/
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product h1{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-rendering: optimizeLegibility;
+    color: #212529;
+    font-family: Muli,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: initial;
+    letter-spacing: .1px;
+    line-height: 1.2;
+}
+.single-product input{
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 16px 24px;   
+    line-height: 1.5;
+    display: inline-block;
+    background-color: #fff;
+    border-color: #fff;
+    color: #0c0505;
+    max-width: 100%;
+ 
+}
+input:focus{
+    outline: none;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+ p{
+    margin-bottom: 0;
+}
+ .money{
+    font-size: 20px;
+    color: red;
+    font-weight: 400;
+    margin-right: 6px;
+}
+.old-price{
+    line-height: 18px;
+    text-decoration: line-through;
+    color: #888;
+    font-weight: 400;
+}
+
+input{
+    text-align: center;
+    width: 100%;
+
+}
+input:not(.disabled):not([disabled]):focus, input:not(.disabled):not([disabled]):hover {
+    opacity: 1;
+    color: #0c0505;
+    background-color: #ececec;
+    border-color: #e6e6e6;
+    box-shadow: 0 0 0 0.2rem #ccc;
+}
+input .input--small{
+    padding: 6px 10px;
+}
+.btn--primary {
+    background-color: #444;
+    border-color: #444;
+    color: #fff;
+    width: 100%;
+    margin-top: 10px;
+}
+.btn--primary:not(.disabled):not([disabled]):hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #313131;
+    border-color: #2b2b2b;
+    box-shadow: 0 0 0 0.2rem #777;
+}
+.material-icons-round {
+    font-family: Material icons round;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+    overflow: hidden;
+   margin-right: 5px;
+}
+.container h3{
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+.container h4{
+    text-rendering: optimizeLegibility;
+    color: #212529;
+    font-family: Muli,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: initial;
+    letter-spacing: .1px;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 23px;
+}
+.container p {
+    text-rendering: optimizeLegibility;
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+section h2{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 27px;
+
+}
+
+
+
+/*-------------------Media Query for less than 600 screen size--------------------------*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+
+    }
+    .single-produc h1{
+        font-size: 26px;
+        line-height: 32
+        px;
+    }
+}

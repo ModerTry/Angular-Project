@@ -78,6 +78,54 @@ a.active, a:hover{
 #check{
     display:none;
 }
+ li .fa-cart-plus{
+    font-size: 22px;
+ }
+ li .bg-danger{
+    font-size: 10px;
+ }
+.badge {
+    position: relative;
+    top: -1px;
+}
+.bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-danger-rgb),var(--bs-bg-opacity))!important;
+}
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:952px){
     nav{
         background-color:#fff;

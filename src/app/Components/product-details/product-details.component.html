@@ -1,0 +1,60 @@
+<!-----------------------------Product Detail Start--------------------------------------->
+<div class="small-container single-product" >
+    <div class="row">
+        <div class="col-6"   *ngFor="let item of ridaCollection">
+          <img src="{{item.imgUrl}}" alt="Product" width="100%" id="ProductImg">   
+
+
+          <div class="small-img-row">
+              <div class="small-img-col">
+                <img src="../../assets/Images/Product_2.jpg" alt="Product" width="100%" class="small-img">
+              </div>
+              <div class="small-img-col">
+                <img src="../../assets/Images/Product_3.jpg" alt="Product" width="100%" class="small-img">
+              </div>
+              <div class="small-img-col">
+                <img src="../../assets/Images/Product_4.jpg" alt="Product" width="100%" class="small-img"> 
+              </div>
+              <div class="small-img-col">
+                <img src="../../assets/Images/Product_5.jpg" alt="Product" width="100%" class="small-img"> 
+              </div>
+          </div>
+
+
+        </div>
+        <div class="col-6" *ngFor="let item of ridaCollection">
+            <h2>{{item.ridaName}}</h2>
+            <p><span class="money">INR 2100.00</span> <span class="old-price">INR 4000.00</span></p>
+        
+        <input type="number" class="qty-input input--small " name="quantity" id="Quantity-product-6732920488010" value="1" min="1" max="99999">
+        
+        <button type="submit" name="add" id="AddToCart--template--14281495937098__main" class="btn btn--primary btn--add-to-cart full">
+          <span class="btn__text">
+            <span class="material-icons-round button-cart-icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+            <span class="btn__add-to-cart-text">Add to Cart</span>
+          </span>
+        </button>
+    
+        <div class="container">
+           <h3>Product Information</h3>
+           <h4>Description:</h4>
+           <p>{{item.description}}</p>
+            <h4>Brand:</h4>      
+            <p>{{item.brand}}</p>
+            <h4>Size & Fit:</h4>
+            <p>{{item.sizeAndFit}}</p>
+           <h4>Material & Care:</h4>    
+           <p>{{item.materialAndCare}}</p>
+          </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------Product Detail Start--------------------------------------->
+<section>
+  <h2>Recommended For You</h2>
+  <app-rida-product-cart></app-rida-product-cart>
+</section>
+
+
+
+

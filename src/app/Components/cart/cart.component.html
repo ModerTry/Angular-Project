@@ -1,0 +1,60 @@
+<ng-container *ngIf="ridaCollection.length !=0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of ridaCollection; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{item.brand}}</td>
+                            <td><img style="width:120px;" src="{{item.imgUrl}}" alt="Product"></td>
+                            <td style="width: 25%;">{{item.description}}</td>
+                            <th style="width: 15%;">{{item.ridaPrice}}</th>
+                            <td style="width: 15%;">{{item.quantity}}</td>
+                            <td style="width: 15%;">{{item.total}}</td>
+                            <td>
+                               <button (click)="removeItem(item)" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <!--<td><button (click)="emptycart()" class="btn btn-danger">Empty Cart</button></td>-->
+                            <td><button routerLink="/rida" class="btn btn-primary">Shop More</button></td>
+                            <td><button class="btn btn-success">Checkout</button></td>
+                            <td><strong>Grand Total: ${{grandTotal}}</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</ng-container>
+
+
+
+<ng-container *ngIf="ridaCollection.length == 0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="../../assets/Images/emptycartimg.png" alt="">
+            <h4>Your cart is empty!</h4>
+            <h6>Add item to it now</h6>
+            <button routerLink="/rida" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>

@@ -76,8 +76,7 @@
     display: block;
     text-transform: uppercase;
     height: 30px;
-    width: 150px;
-   
+    width: 150px; 
     line-height: 30px;
     font-size: 12px;
     white-space: nowrap;
@@ -157,7 +156,6 @@
 .card:hover .cart-item{
     opacity: 1;
     top: 0;
-
 }
 .product-container{
     position: absolute;
@@ -185,6 +183,7 @@
     opacity: 1;
     right: 10px;
 }
+
 .content{
     padding: 16px 0;
     text-align: center;

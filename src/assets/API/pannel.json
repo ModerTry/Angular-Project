@@ -6,6 +6,7 @@
                 "imgUrl":"../../assets/Images/Product_4.jpg",
                 "pannelName":"Abcd",
                 "pannelPrice":590,
+                "pannelOldPrice":4000,
                 "isFavourite":false
             },
             {
@@ -13,6 +14,7 @@
                 "imgUrl":"../../assets/Images/Product_4.jpg",
                 "pannelName":"Abcd",
                 "pannelPrice":590,
+                 "pannelOldPrice":4000,
                 "isFavourite":false
             },
             {
@@ -20,6 +22,7 @@
                 "imgUrl":"../../assets/Images/Product_4.jpg",
                 "pannelName":"Abcd",
                 "pannelPrice":590,
+                "pannelOldPrice":4000,
                 "isFavourite":false
             },
             {
@@ -27,6 +30,7 @@
                 "imgUrl":"../../assets/Images/Product_4.jpg",
                 "pannelName":"Abcd",
                 "pannelPrice":590,
+                "pannelOldPrice":4000,
                 "isFavourite":false
             }
       
