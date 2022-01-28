@@ -1,11 +1,11 @@
 import { CartComponent } from './Components/cart/cart.component';
 import { ProductDetailsComponent } from './Components/product-details/product-details.component';
-import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './Components/home/home.component';
+import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
-import { LaceComponent } from './lace/lace.component';
-import { RidaComponent } from './rida/rida.component';
+import { LaceComponent } from './Components/lace/lace.component';
+import { RidaComponent } from './Components/rida/rida.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

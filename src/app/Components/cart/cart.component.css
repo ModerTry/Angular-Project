@@ -48,3 +48,38 @@ h4,h6{
     border-color: #e6e6e6;
     box-shadow: 0 0 0 0.2rem #ccc;
 }
+.overlay-content .btn{
+    background-color: #444;
+    border-color: #444;
+    color: #0c0505;
+}
+.qty-container .qty-adjust {
+    display: inherit;
+}
+.qty-minus {
+    left: 0;
+}
+.material-icons-round {
+    font-family: Material icons round;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+.overlay-content .btn {
+    background-color: #444;
+    border-color: #444;
+    color: #0c0505;
+}
+.btn-square-small {
+    line-height: 36px;
+    font-size: 18px;
+}

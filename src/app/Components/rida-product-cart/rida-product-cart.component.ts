@@ -1,9 +1,8 @@
-import { CartService } from './../service/cart.service';
+import { CartService } from './../../service/cart.service';
+
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-
 
 @Component({
   selector: 'app-rida-product-cart',
@@ -12,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class RidaProductCartComponent implements OnInit {
   public ridaCollection:any;
+  searchKey:string = "";
  
 
   constructor(private http:HttpClient,private router:Router, private CartService:CartService) { }
@@ -28,8 +28,12 @@ export class RidaProductCartComponent implements OnInit {
         this.ridaCollection = res.ridaCollection;
 
         this.ridaCollection.forEach((a:any) => {
-          Object.assign(a,{quantity:1,total:a.price});
+          Object.assign(a,{quantity:1,ridaPrice:a.ridaPrice});
         });
+    })
+
+    this.CartService.search.subscribe((val:any)=>{
+      this.searchKey =val;
     })
   }
  // onSelect(item:any){

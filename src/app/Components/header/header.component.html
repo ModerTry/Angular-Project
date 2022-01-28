@@ -12,6 +12,13 @@
     <li><a routerLink="/lace" routerLinkActive="active">Lace</a></li>
     <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
     <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
+    <li><a>
+      <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"  placeholder="Search Products"> 
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+  </a></li>
+      
     <li><a routerLink="/cart" routerLinkActive="active">Cart <i class="fa fa-cart-plus"></i> <i class="badge bg-danger">{{totalItem}}</i></a></li>
   </ul>
 </nav>

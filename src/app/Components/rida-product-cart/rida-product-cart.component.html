@@ -7,7 +7,7 @@
         </div>
         <div class="row">
           <ng-container >
-            <div class="col-md-3" *ngFor="let item of ridaCollection">
+            <div class="col-md-3" *ngFor="let item of ridaCollection | filter:searchKey:'ridaName'">
                 <div class="card" >
                     <div class="cart-main">
                         <div class="discount"><i class="fa fa-tag" aria-hidden="true"></i> Save INR {{item.ridaPrice}}</div>
