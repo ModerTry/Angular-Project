@@ -71,7 +71,6 @@
   color: #fff;
   background-color: #313131;
   border-color: #2b2b2b;
-  -webkit-box-shadow: 0 0 0 0.2rem #777;
   box-shadow:0 0 0 0.2rem #777; 
 }
   .slider-btn .btn-2:hover{
@@ -79,10 +78,6 @@
       color: #0c0505;
       background-color: #ececec;
       border-color: #e6e6e6;
-      -webkit-box-shadow: 0 0 0 0.2rem #ccc;
-      -moz-box-shadow: 0 0 0 .2rem #ccc;
-      -ms-box-shadow: 0 0 0 .2rem #ccc;
-      -o-box-shadow: 0 0 0 .2rem #ccc;
       box-shadow: 0 0 0 0.2rem #ccc;
   }
 

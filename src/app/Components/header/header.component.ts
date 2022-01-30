@@ -1,4 +1,4 @@
-import { Component, OnInit,Input, Output } from '@angular/core';
+import { Component, OnInit,Input, Output, HostListener } from '@angular/core';
 import { CartService } from './../../service/cart.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -27,5 +27,14 @@ export class HeaderComponent implements OnInit {
     console.log(this.searchTerm);
     this.CartService.search.next(this.searchTerm);
   }
-  
+  header_variable=false;
+  @HostListener("document:scroll")
+  scrollfunction(){
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
+      this.header_variable= true;
+    } 
+    else{
+      this.header_variable= false;
+    }
+  }
 }

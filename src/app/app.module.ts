@@ -23,6 +23,7 @@ import { CommonModule } from '@angular/common';
 import { ProductDetailsComponent } from './Components/product-details/product-details.component';
 import { CartComponent } from './Components/cart/cart.component';
 import { FilterPipe } from './shared/filter.pipe';
+import { CollectionListComponent } from './Components/collection-list/collection-list.component';
 
 
 
@@ -45,6 +46,7 @@ import { FilterPipe } from './shared/filter.pipe';
     ProductDetailsComponent,
     CartComponent,
     FilterPipe,
+    CollectionListComponent,
     
   ],
   imports: [
