@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "fullname": "shahibamansuree3@gmail.com",
+      "email": "shahibamansuree3@gmail.com",
+      "mobile": 9669617860,
+      "password": "Shahi"
+    },
+    {
+      "id": 3,
+      "fullname": "Shahiba Mansuree",
+      "email": "shahibamansuree3@gmail.com",
+      "mobile": 8827669073,
+      "password": "Shahi"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Shahiba Mansuree",
+      "email": "shahibamansuree3@gmail.com",
+      "password": "Shahi",
+      "mobile": 8827669073,
+      "id": 1
+    },
+    {
+      "fullname": "Ayat",
+      "email": "shahibamansuree786@gmail.com",
+      "password": "Mine",
+      "mobile": 9669617860,
+      "id": 2
+    },
+    {
+      "fullname": "Mahi",
+      "email": "mahi@gmail.com",
+      "password": "Mahi@1",
+      "mobile": 7386386248,
+      "id": 3
+    },
+    {
+      "fullname": "Dua",
+      "email": "S@gmail.com",
+      "password": "S.M.",
+      "mobile": 786,
+      "id": 4
+    },
+    {
+      "fullname": "Dua",
+      "email": "S@gmail.com",
+      "password": "S.M.",
+      "mobile": 786,
+      "id": 5
+    },
+    {
+      "fullname": "Ayat Mansuree",
+      "email": "s@123",
+      "password": "Mine",
+      "mobile": 1234,
+      "id": 6
+    },
+    {
+      "fullname": "Ayat Mansuree",
+      "email": "s@123",
+      "password": "Mine",
+      "mobile": 1234,
+      "id": 7
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

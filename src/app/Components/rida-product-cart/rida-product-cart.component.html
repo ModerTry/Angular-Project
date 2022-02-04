@@ -7,10 +7,10 @@
         </div>
         <div class="row">
           <ng-container >
-            <div class="col-md-3" *ngFor="let item of ridaCollection | filter:searchKey:'ridaName'">
+            <div class="col-md-3"  routerLink="/product-details" *ngFor="let item of ridaCollection | filter:searchKey:'ridaName'">
                 <div class="card" >
                     <div class="cart-main">
-                        <div class="discount"><i class="fa fa-tag" aria-hidden="true"></i> Save INR {{item.ridaPrice}}</div>
+                        <div class="discount"><i class="fa fa-tag" aria-hidden="true"></i> Save INR {{item.ridaOldPrice-item.ridaNewPrice}}</div>
                       
                         <div class="product-container">
                             <div class="p" (mouseover)="changeImage($event)"><img src="../../assets/Images/Floral_Lehenga.jpg" alt="Product"></div>
@@ -31,13 +31,12 @@
                     </div>
                     <div class="content">
                         <a href="">{{item.ridaName}}</a>
-                        <p><span class="money">INR 2100.00</span> <span class="old-price">INR 4000.00</span></p>
+                        <p><span class="money">{{item.ridaNewPrice}}</span> <span class="old-price">{{item.ridaOldPrice}}</span></p>
                     </div>
                 </div>
             </div>
           </ng-container>
             </div>
-          
     </div>
 
 </section>

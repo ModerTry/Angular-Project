@@ -1,5 +1,5 @@
 import { CartService } from './../../service/cart.service';
-
+import { AuthService } from 'src/app/auth.service';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -14,9 +14,13 @@ export class RidaProductCartComponent implements OnInit {
   searchKey:string = "";
  
 
-  constructor(private http:HttpClient,private router:Router, private CartService:CartService) { }
+  constructor(private http:HttpClient,private router:Router, private CartService:CartService, private auth:AuthService) { }
+ 
+  ngOnInit(): void {
+    this.getRidaCollection();
+    this.getData();
+  }
 
-  ngOnInit(): void {this.getRidaCollection()}
   url:string ="../../assets/Images/Floral_Lehenga.jpg";
   changeImage(event:any)
   {
@@ -35,14 +39,25 @@ export class RidaProductCartComponent implements OnInit {
     this.CartService.search.subscribe((val:any)=>{
       this.searchKey =val;
     })
+   
   }
- // onSelect(item:any){
-   // this.router.navigate(['/productDetails','ridaCollection.id']);
-  //}
+
 addtoCart(item:any){
   this.CartService.addtoCart(item);
 
 }
+p:any;
+data:any=[];
+getData(){
+  this.auth.getData().subscribe(
+    (data) => {
+      this.data = data;
+    }
+  )
+}
+
+
+
 
 }
 

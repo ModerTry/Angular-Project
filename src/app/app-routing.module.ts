@@ -1,3 +1,6 @@
+import { UserDashboardComponent } from './Components/user-dashboard/user-dashboard.component';
+import { SignupComponent } from './Components/signup/signup.component';
+import { LoginComponent } from './Components/login/login.component';
 import { CartComponent } from './Components/cart/cart.component';
 import { ProductDetailsComponent } from './Components/product-details/product-details.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -14,11 +17,14 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'rida', component: RidaComponent },
   {path:'product-details', component: ProductDetailsComponent },
-  {path:'ridaCollection/:id', component: ProductDetailsComponent },
+  {path:'ridaDetail/:id', component: ProductDetailsComponent },
   {path:'lace', component:LaceComponent}, 
   {path:'about-us',component:AboutUsComponent},
   {path: 'contact-us', component:ContactUsComponent},
   {path:'cart', component:CartComponent },
+  {path:'login',component:LoginComponent},
+  {path:'signup',component:SignupComponent},
+  {path:'user', component:UserDashboardComponent },
   {path: "**", component: PageNotFoundComponent}
 ];
 
@@ -28,4 +34,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents = [HomeComponent,RidaComponent,ProductDetailsComponent,LaceComponent,AboutUsComponent,ContactUsComponent, PageNotFoundComponent
-,CartComponent]
+,CartComponent,LoginComponent,SignupComponent]

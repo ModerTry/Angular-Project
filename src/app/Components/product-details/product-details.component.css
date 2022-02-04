@@ -1,4 +1,7 @@
 /*-----------------------------Product Detail Start---------------------------------------*/
+body{
+    padding: 100px;
+}
 .single-product{
     margin-top: 80px;
 }
@@ -66,7 +69,10 @@ input:focus{
     color: #888;
     font-weight: 400;
 }
+.single-product input{
+    padding: 8px 24px;
 
+}
 input{
     text-align: center;
     width: 100%;
@@ -95,6 +101,10 @@ input .input--small{
     background-color: #313131;
     border-color: #2b2b2b;
     box-shadow: 0 0 0 0.2rem #777;
+}
+img {
+    border: 0 none;
+    border-radius: 10px;
 }
 .material-icons-round {
     font-family: Material icons round;

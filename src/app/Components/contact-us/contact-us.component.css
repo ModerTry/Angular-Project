@@ -16,7 +16,7 @@
     background-size: cover;
 }
 .contact .content{
-    max-width: 800px;
+    max-width: 1000px;
     text-align: center;
 }
 .contact .content h1{
@@ -70,7 +70,7 @@
 }
 .contactForm{
     width: 40%;
-    padding: 40px;
+    padding: 10px;
     background: #fff;
 }
 .contactForm h2{
@@ -110,7 +110,7 @@
 .contactForm .inputBox textarea:valid ~ span{
     color: #e91e63;
     font-size: 12px;
-    transform: translateY(-20px);   
+    transform: translateY(-33px);   
 }
 .contactForm .inputBox input[type="submit"]{
     width: 100px;

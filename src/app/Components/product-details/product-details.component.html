@@ -1,11 +1,13 @@
 <!-----------------------------Product Detail Start--------------------------------------->
+<body>
 <div class="small-container single-product" >
     <div class="row">
-        <div class="col-6"   *ngFor="let item of ridaCollection">
-          <img src="{{item.imgUrl}}" alt="Product" width="100%" id="ProductImg">   
+        <div class="col-6"  >
+          <img src="{{ridaDetails?.imgUrl}}" alt="Product" width="100%" id="ProductImg">   
 
 
           <div class="small-img-row">
+
               <div class="small-img-col">
                 <img src="../../assets/Images/Product_2.jpg" alt="Product" width="100%" class="small-img">
               </div>
@@ -21,11 +23,12 @@
           </div>
 
 
+
         </div>
-        <div class="col-6" *ngFor="let item of ridaCollection">
-            <h2>{{item.ridaName}}</h2>
-            <p><span class="money">INR 2100.00</span> <span class="old-price">INR 4000.00</span></p>
-        
+        <div class="col-6">
+            <h2>{{ridaDetails?.ridaName}}</h2>
+            <p><span class="money">INR {{ridaDetails?.ridaNewPrice}}</span> <span class="old-price">INR {{ridaDetails?.ridaOldPrice}}</span></p>
+            Quantity
         <input type="number" class="qty-input input--small " name="quantity" id="Quantity-product-6732920488010" value="1" min="1" max="99999">
         
         <button type="submit" name="add" id="AddToCart--template--14281495937098__main" class="btn btn--primary btn--add-to-cart full">
@@ -38,13 +41,13 @@
         <div class="container">
            <h3>Product Information</h3>
            <h4>Description:</h4>
-           <p>{{item.description}}</p>
+           <p>{{ridaDetails?.description}}</p>
             <h4>Brand:</h4>      
-            <p>{{item.brand}}</p>
+            <p>{{ridaDetails?.brand}}</p>
             <h4>Size & Fit:</h4>
-            <p>{{item.sizeAndFit}}</p>
+            <p>{{ridaDetails?.sizeAndFit}}</p>
            <h4>Material & Care:</h4>    
-           <p>{{item.materialAndCare}}</p>
+           <p>{{ridaDetails?.materialAndCare}}</p>
           </div>
         </div>
     </div>
@@ -54,6 +57,7 @@
   <h2>Recommended For You</h2>
   <app-rida-product-cart></app-rida-product-cart>
 </section>
+</body>
 
 
 

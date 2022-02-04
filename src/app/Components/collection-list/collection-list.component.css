@@ -82,6 +82,7 @@ a:-webkit-any-link {
     display: flex;
     align-items: center;
 }
+
 .overlay {
     color: #0c0505;
 }
@@ -108,11 +109,13 @@ a:-webkit-any-link {
 .collection_grid-image {
     transition: all .3s ease;
 }
+
 .bgset {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .media {
     display: block;
     position: absolute;

@@ -7,7 +7,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -24,6 +23,10 @@ import { ProductDetailsComponent } from './Components/product-details/product-de
 import { CartComponent } from './Components/cart/cart.component';
 import { FilterPipe } from './shared/filter.pipe';
 import { CollectionListComponent } from './Components/collection-list/collection-list.component';
+import { LoginComponent } from './Components/login/login.component';
+import { SignupComponent } from './Components/signup/signup.component';
+import { UserDashboardComponent } from './Components/user-dashboard/user-dashboard.component';
+
 
 
 
@@ -47,6 +50,9 @@ import { CollectionListComponent } from './Components/collection-list/collection
     CartComponent,
     FilterPipe,
     CollectionListComponent,
+    LoginComponent,
+    SignupComponent,
+    UserDashboardComponent,
     
   ],
   imports: [
@@ -58,7 +64,7 @@ import { CollectionListComponent } from './Components/collection-list/collection
     HttpClientModule,
     OwlModule,
     CarouselModule,
-    CommonModule,
+    CommonModule
   ],
   providers:[],
   bootstrap: [AppComponent]

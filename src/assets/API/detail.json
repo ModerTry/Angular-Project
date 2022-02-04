@@ -1,0 +1,16 @@
+
+        { 
+            "id":1,
+            "imgUrl":"../../assets/Images/Floral_Lehenga.jpg",
+            "ridaName":"Nakab",
+            "ridaPrice":590,
+            "ridaOldPrice":2000,
+            "ridaNewPrice":1100,
+            "isFavourite":false,
+            "description":"Pink & Orange Banarasi Silk Designer Lehenga Choli,What better than a Banarasi silk lehenga choli all the way from the heart of India to add colors to your festivities.This ensemble comes with a skirt in shades of pink and orange. Matching this is a blouse in pink and a dupatta in orange. Beautiful work all overskirt and dupatta border to make it more affable.",
+            "brand":"Fatemi Creation",
+            "sizeAndFit":"Blouse Piece Length: 1-1.2 meters Lehenga Gher: 3 meters Lehenga Length: Max 42 Inch Dupatta Length : 1.5-2.5 meters",
+            "materialAndCare":"Blouse Banarasi Silk Lehenga Banarasi Silk Customise up to 42 Lehenga Type Circular Dupatta Net"
+        }
+    
+

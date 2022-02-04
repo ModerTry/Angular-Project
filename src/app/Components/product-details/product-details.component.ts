@@ -1,5 +1,8 @@
+import { RidaProductCartComponent } from './../rida-product-cart/rida-product-cart.component';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 
 
@@ -10,24 +13,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  public ridaCollection:any;
- 
+  public ridaDetails:any;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private router:ActivatedRoute) { }
 
-  ngOnInit(): void {this.getRidaCollection()}
+  ngOnInit(): void {this.getRidaDetails()}
   url:string ="../../assets/Images/Floral_Lehenga.jpg";
   changeImage(event:any)
   {
     this.url = event.target.src;
+
   }
-  getRidaCollection(){
-    this.http.get("assets/API/rida.json").subscribe((res:any)=>
+  getRidaDetails(){
+    this.http.get("assets/API/detail.json").subscribe((res:any)=>
       {console.log(res);
-        this.ridaCollection = res.ridaCollection;
+        this.ridaDetails = res;
     })
   }
-
-  
+ 
 
 }
