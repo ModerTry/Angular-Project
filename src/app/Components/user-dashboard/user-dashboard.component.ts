@@ -1,8 +1,10 @@
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/auth.service';
 import { UserModel } from './user.model';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { ApiService } from 'src/app/shared/api.service';
-import { of } from 'rxjs';
+
 
 
 
@@ -18,10 +20,10 @@ export class UserDashboardComponent implements OnInit {
   showAdd !: boolean;
   showUpdate !: boolean;
 
-  constructor(private formbuilder:FormBuilder, private api:ApiService) { }
+  constructor(public authservice:AuthService, public router:Router,private formbuilder:FormBuilder, private api:ApiService) { }
 
   ngOnInit(): void {
-    this.formValue = this.formbuilder.group({
+this.formValue = this.formbuilder.group({
       fullname : [''],
       email : [''],
       mobile : [''],
@@ -29,7 +31,7 @@ export class UserDashboardComponent implements OnInit {
     })
     this.getAllUser();
   }
-  clickAdduser(){
+ clickAdduser(){
     this.formValue.reset();
     this.showAdd = true;
     this.showUpdate = false;
@@ -74,7 +76,7 @@ onEdit(row : any){
    this.formValue.controls['email'].setValue(row.email);
    this.formValue.controls['mobile'].setValue(row.mobile);
    this.formValue.controls['password'].setValue(row.password);
-}
+ }
 updateUserDetails(){
   this.userModelObj.fullname = this.formValue.value.fullname;
   this.userModelObj.email = this.formValue.value.email;
@@ -90,4 +92,5 @@ updateUserDetails(){
     this.getAllUser();
   })
 }
+
 }

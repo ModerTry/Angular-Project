@@ -1,9 +1,9 @@
 <body>
   <div class="container">
      <header>SignUp Form</header>
-     <form  [formGroup]="signupForm" (ngSubmit)="signUp()">
+     <form  [formGroup]="signupForm" (ngSubmit)=" register()">
         <div class="input-field">
-            <input formControlName="fullname"   type="text" class="form-control">
+            <input formControlName="fullname"   type="text" class="form-control" [(ngModel)]="fullname">
             <label >Full Name</label>
             <span class="text-danger" *ngIf="signupForm.controls['fullname'].dirty && signupForm.hasError('required','fullname')">"Fullname is required</span>
         </div>
@@ -13,33 +13,34 @@
             <span class="text-danger" *ngIf="signupForm.controls['mobile'].dirty && signupForm.hasError('required','mobile')">"Mobile is required</span>
         </div>
         <div class="input-field">
-          <input formControlName="email" type="email" class="form-control">
+          <input formControlName="email" type="email" class="form-control" [(ngModel)]="email">
           <label>Email address</label>
           <span class="text-danger" *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">"Email is required</span>
       </div>
       <div class="input-field">
-          <input formControlName="password" type="password" class="form-control">
+          <input formControlName="password" type="password" class="form-control" [(ngModel)]="password">
           <label>Password</label>
           <span class="text-danger" *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required','password')">"Password is required</span>
       </div>
         <div class="button">
            <div class="inner"></div>
-           <button type="submit" [disabled]="!signupForm.valid" (click)="signUp()">SIGN UP</button>
+           <button type="submit" [disabled]="!signupForm.valid" (click)=" register()">SIGN UP</button>
         </div>
      </form>
-     <div class="auth">
-        Or login with
-     </div>
-     <div class="links">
-        <div class="facebook">
-          <i class="fa fa-facebook-official" aria-hidden="true"><span>Facebook</span></i>
-        </div>
-        <div class="google">
-          <i class="fa fa-google-plus-square" aria-hidden="true"><span>Google</span></i>
-        </div>
-     </div>
+     <div class="form-group p-2">
+      <p *ngIf="errorMessage.length>0" class="text-danger">
+        {{errorMessage}}
+      </p>
+      <p *ngIf="error.message.length>0" class="text-danger">
+        {{error.message}}
+      </p>
+      <p *ngIf="error.message.length>0" class="text-info">
+        {{message}}
+      </p>
+    </div>
+    
      <div class="signup">
-      Already Registered?<a routerLink="/login"> Click to Login!!</a>
+      Already Registered? <a routerLink="/login"> Click to Login!!</a>
      </div>
   </div>
 </body>

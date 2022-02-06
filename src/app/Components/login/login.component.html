@@ -4,12 +4,12 @@
        <header>Login Form</header>
        <form [formGroup]="loginForm" (ngSubmit)="login()">
           <div class="input-field">
-            <input formControlName="email" type="text"  class="form-control" required>
+            <input formControlName="email" type="text"  class="form-control" [(ngModel)]="email" required>
              <label>Email or Username</label>
              <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">"Email Id is required</span>
           </div>
           <div class="input-field">
-            <input formControlName="passowrd" type="password" class="form-control" required>
+            <input formControlName="passowrd" type="password" class="form-control" [(ngModel)]="password" required>
             <label>Password</label>
             <span class="text-danger" *ngIf="loginForm.controls['passowrd'].dirty && loginForm.hasError('required','password')">"Password is required</span>
           </div>
@@ -19,19 +19,20 @@
           </div>
         </div>
        </form>
-       <div class="auth">
-          Or login with
+       <div class="form-group p-2">
+         <p *ngIf="errorMessage.length>0" class="text-danger">
+           {{errorMessage}}
+         </p>
+         <p *ngIf="error.message.length>0" class="text-danger">
+           {{error.message}}
+         </p>
+         <p *ngIf="error.message.length>0" class="text-info">
+           {{message}}
+         </p>
        </div>
-       <div class="links">
-          <div class="facebook">
-            <i class="fa fa-facebook-official"><span>Facebook</span></i>
-          </div>
-          <div class="google">
-             <i class="fa fa-google-plus-square"><span>Google</span></i>
-          </div>
-       </div>
+       
        <div class="signup">
-        New User?<a routerLink="/signup">Signup now!!</a>
+        New User? <a routerLink="/signup">Signup now!!</a>
        </div>
     </div>
 

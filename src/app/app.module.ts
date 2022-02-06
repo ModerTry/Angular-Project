@@ -6,6 +6,10 @@ import { FormsModule, ReactiveFormsModule}   from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from '../environments/environment';
 
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
@@ -64,7 +68,10 @@ import { UserDashboardComponent } from './Components/user-dashboard/user-dashboa
     HttpClientModule,
     OwlModule,
     CarouselModule,
-    CommonModule
+    CommonModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFirestoreModule
   ],
   providers:[],
   bootstrap: [AppComponent]
